@@ -20,10 +20,10 @@ urlpatterns = [
     # Note that "/?" at the end means a trailing
     # slash at the end of the URL can be included
     # but is not required.
-	url(r'^resources/?$', views.resources),
-	url(r'^pictures/?$', views.pictures),
-	url(r'^projects/?$', views.projects),
-
+	url(r'^resources/?', views.resources),
+	url(r'^pictures/?', views.pictures),
+	url(r'^projects/?', views.projects),
+	url(r'^accounts/?', include('accounts.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += staticfiles_urlpatterns()

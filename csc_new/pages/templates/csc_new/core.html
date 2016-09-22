@@ -27,11 +27,35 @@
 	</head>
 	<body>
 		<div>
+			<div class="csc-navbar">
+				<a href="/" id="csc-header">
+					<div class="csc-navbar-button">
+						Computer Science Community
+					</div>
+				</a>
+				<a href="/dang/" id="x">
+					<div class="csc-navbar-button">
+						EVENT SIGN IN
+					</div>
+				</a>
+				<a href="/accounts/register/" id="x">
+					<div class="csc-navbar-button">
+						SIGN UP
+					</div>
+				</a>
+				<a href="/accounts/login/"  id="x">
+					<div class="csc-navbar-button">
+						LOG IN
+					</div>
+				</a>
+			</div>
+
+			
 			{% block pre-nav %}
 			{% endblock %}
 
 			<!-- Nav bar -->
-			<div id="csc-navbar">
+			<div id="csc-navbar" class="csc-navbar">
 				<a href="/" id="index">
 					<div class="csc-navbar-button">
 						HOME

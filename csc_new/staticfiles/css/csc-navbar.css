@@ -1,5 +1,5 @@
 
-#csc-navbar {
+.csc-navbar {
 	right: 0px;
 	left: 0px;
 	text-align: center;
@@ -9,12 +9,12 @@
 	background-color: rgb(79, 125, 201);
 	z-index: 1;
 }
-#csc-navbar a {
+.csc-navbar a {
 	display: inline-block;
 	margin-right: 10px;
 	margin-left: 10px;
 }
-#csc-navbar a:hover {
+.csc-navbar a:hover {
 	background-color: orange;
 }
 .csc-navbar-button {
@@ -27,6 +27,11 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-#csc-navbar a.active {
+.csc-navbar a.active {
 	background-color: orange;
+}
+#csc-header {
+	float:left;
+	background-color: orange;
+	margin: 0;
 }

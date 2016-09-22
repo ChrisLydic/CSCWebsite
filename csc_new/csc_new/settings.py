@@ -19,6 +19,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS' : [
             'csc_new/templates',
+	    'accounts/templates',
         ],
         'APP_DIRS' : True,
         'OPTIONS': {
@@ -45,9 +46,7 @@ TEMPLATES = [
 SECRET_KEY = 'pp0_w0sbde9&ye%!*i&!)76nq7-y22fbfpvb9heze*&)8j7dpi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-TEMPLATE_DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.cs.rit.edu']
 
@@ -61,7 +60,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.sessions',
     'django.contrib.staticfiles',
-
+	'accounts',
 	'pages',
 #	'member',
 	'email_obfuscator',
@@ -74,7 +73,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'csc_new.middleware.TemplateDoesNotExistMiddleware',
+    #'csc_new.middleware.TemplateDoesNotExistMiddleware',
 )
 
 ROOT_URLCONF = 'csc_new.urls'
